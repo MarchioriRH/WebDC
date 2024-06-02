@@ -6,6 +6,7 @@ import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { routes } from './app/app.routes';
 import { appConfig } from './app/app.config';
+import { HttpClientModule } from '@angular/common/http';
 
 // platformBrowserDynamic().bootstrapModule(AppComponent, {
 //   providers: [importProvidersFrom(BrowserModule, RouterModule.forRoot(routes)) as unknown as StaticProvider[]], // Cast to StaticProvider[]

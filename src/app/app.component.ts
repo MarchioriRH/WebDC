@@ -6,6 +6,9 @@ import { InformationComponent } from "./components/information/information.compo
 import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LoginComponent } from './admin/login/login.component';
+import { WeatherComponent } from "./components/weather/weather.component";
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { Provider } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -13,14 +16,16 @@ import { LoginComponent } from './admin/login/login.component';
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
     imports: [
-              RouterOutlet,
-              HeaderComponent, 
-              NoticesComponent, 
-              InformationComponent,
-              FooterComponent, 
-              ContactComponent,
-              LoginComponent,
-             ]
+        RouterOutlet,
+        HeaderComponent,
+        NoticesComponent,
+        InformationComponent,
+        FooterComponent,
+        ContactComponent,
+        LoginComponent,
+        WeatherComponent,
+        HttpClientModule,
+      ]
 })
 export class AppComponent {
   title = 'dc-app';
